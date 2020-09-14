@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="container col-md-4 ">
+            <div class="sidebar-sticky">
+                <nav class="d-none d-md-block bg-light sidebar">
+                    <div class="card container-fluid" style="width: 40rem;">
+                        <div class="card-header">
+                            <h2 class="text-muted" style="color: goldenrod"> NEWS SOURCES A-Z</h2>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            {% for source in sources %}
+                            <a style="text-decoration: none;" class="text-warning" href="/source/{{source.id}}">
+                                <li class="list-group-item ">{{ source.name.upper() }} {% endfor %}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container col-md-7" style="background-color: #fff;
+    border: 1px solid #e8e8e9; float: right">
+            <h2 class="text-center" style="color: goldenrod"> CURRENTLY ON {{source.upper()}}</h2>
+            <hr> {% for james in Top_headlines %} {% if james.urlToImage%}
+            <div class="card">
+                <div class="card-body">
+                    <h2 style="size:21px" class="card-title text-warning">{{ james.title }}</h2>
+                    <hr>
+                    <p class="card-text text-body">{{ james.description }}</p>
+
+
+                    <img src="{{ james.urlToImage }}" class="card-img-top img-responsive" alt="...">
+                    <p class="card-text" style='text-align: right; padding-top: 1%;'><small class="text-muted">Article by {{ james.author }} on {{ james.publishedAt}}</small></p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-success"><a style="text-decoration: none;" class="text-warning" href="{{ james.url }}">READ MORE</a></button></div>
+
+                </div>
+                <br>
+                <hr>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

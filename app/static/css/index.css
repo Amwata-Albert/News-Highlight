@@ -1,0 +1,29 @@
+body {
+    background-color: gray;
+}
+
+h2 {
+    color: goldenrod;
+}
+
+.card-side {
+    width: 40rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.col-md-7 {
+    background-color: #fff;
+    border: 1px solid #e8e8e9;
+    float: right;
+}
+
+.article-by {
+    text-align: right;
+}
+
+.h2-title {
+    size: 21px;
+}

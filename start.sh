@@ -1,0 +1,3 @@
+export NEWS_HIGHLIGHT_API_KEY=603d067137214e9091e3cbd6344a63b2
+
+python3.6 manage.py server
