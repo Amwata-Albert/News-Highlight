@@ -18,7 +18,7 @@
                         <div class="card-header">
                             <h2 class="text-muted" style="color: goldenrod"> NEWS SOURCES A-Z</h2>
                         </div>
-                        <ul class="list-group list-group-flush">
+                        <ul class="list-group list-group-flush"></ul>
                             {% for source in sources %}
                             <li class="list-group-item "><a class="text-warning" style="text-decoration: none;" href="/source/{{source.id}}">{{ source.name.upper() }}</a></li>
                             {% endfor %}
