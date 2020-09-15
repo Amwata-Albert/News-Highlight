@@ -1,6 +1,6 @@
 # News_highlight
 
-## By **James Mutahi**
+## By **Amwata Albert**
 
 ## Description
 
@@ -27,10 +27,10 @@ This is an online news platform that provides a list of global news sources and 
 * On your terminal run
  ```./start.py```
 * Access the live site using the local host provided
-* Or access the live website by clicking on this url <https://jamesmutahi-news-highight.herokuapp.com/>
+* Or access the live website by clicking on this url <https://amwata-albert-news-highight.herokuapp.com/>
 
-![NEWS HIGHLIGHT](https://github.com/JamesMutahi/News-Highlight/blob/master/app/static/images/sources.png)
-![NEWS HIGHLIGHT](https://github.com/JamesMutahi/News-Highlight/blob/master/app/static/images/articles.png)
+![NEWS HIGHLIGHT](https://github.com/amwata-albert/News-Highlight/blob/master/app/static/images/sources.png)
+![NEWS HIGHLIGHT](https://github.com/amwata-albert/News-Highlight/blob/master/app/static/images/articles.png)
 
 ## Known Bugs
 
@@ -49,9 +49,9 @@ No Bugs
 
 ## Support and contact details
 
-* Email: mutahijames0@gmail.com
+* Email: albertotieno41@gmail.com
 
 ### License and Copyright details
 
 * [MIT LICENSE](LICENSE)
-Copyright (c) 2019 **James Mutahi**
+Copyright (c) 2020 **Amwata Albert**
