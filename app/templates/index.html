@@ -18,7 +18,7 @@
                         <div class="card-header">
                             <h2 class="text-muted" style="color: goldenrod"> NEWS SOURCES A-Z</h2>
                         </div>
-                        <ul class="list-group list-group-flush"></ul>
+                        <ul class="list-group list-group-flush">
                             {% for source in sources %}
                             <li class="list-group-item "><a class="text-warning" style="text-decoration: none;" href="/source/{{source.id}}">{{ source.name.upper() }}</a></li>
                             {% endfor %}
@@ -37,7 +37,7 @@
                     <div class="card-body">
                         <h2 style="size:21px" class="card-title text-warning">{{ james.title }}</h2>
                         <hr>
-                        <p>class="card-text text-body">{{ james.description }}</p>
+                        <p class="card-text text-body">{{ james.description }}</p>
 
 
                         <img src="{{ james.urlToImage }}" class="card-img-top img-responsive" alt="...">
